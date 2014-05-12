@@ -1,0 +1,181 @@
+/* line 7, ../compass/sass/style.scss */
+.container {
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* line 11, ../compass/sass/style.scss */
+.general-info-links a {
+  float: right;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #262626;
+  font-size: 12px;
+}
+
+/* line 19, ../compass/sass/style.scss */
+nav a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* line 26, ../compass/sass/style.scss */
+.nav-wrapper {
+  float: right;
+  margin-top: 100px;
+  margin-right: 25px;
+}
+
+/* line 32, ../compass/sass/style.scss */
+header {
+  width: 100%;
+  margin: 0px auto;
+}
+
+/* line 37, ../compass/sass/style.scss */
+.product-category a {
+  color: black;
+  text-decoration: none;
+  margin-left: 27px;
+  font-weight: bold;
+}
+
+/* line 44, ../compass/sass/style.scss */
+footer h1 {
+  text-align: center;
+}
+
+/* *************************************Layout*****************************************************/
+/* line 50, ../compass/sass/style.scss */
+.container-1000 {
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+/* line 56, ../compass/sass/style.scss */
+.container-1200 {
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+  max-width: 1220px;
+}
+
+/* line 63, ../compass/sass/style.scss */
+.container-1000 {
+  max-width: 1020px;
+}
+
+/* line 67, ../compass/sass/style.scss */
+.row {
+  clear: both;
+  padding: 0 10px;
+}
+
+/* *********************************************************************************************************************
+ * Common columns definitions
+ */
+/* line 76, ../compass/sass/style.scss */
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  float: left;
+  margin: 0 3% 0 0;
+}
+
+/* line 81, ../compass/sass/style.scss */
+.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
+  margin: 0;
+}
+
+/* line 85, ../compass/sass/style.scss */
+.col1 {
+  width: 5.5%;
+}
+
+/* line 89, ../compass/sass/style.scss */
+.col2 {
+  width: 14%;
+}
+
+/* line 93, ../compass/sass/style.scss */
+.col3 {
+  width: 22.5%;
+}
+
+/* line 97, ../compass/sass/style.scss */
+.col4 {
+  width: 31%;
+}
+
+/* line 101, ../compass/sass/style.scss */
+.col5 {
+  width: 39.5%;
+}
+
+/* line 105, ../compass/sass/style.scss */
+.col6 {
+  width: 48%;
+}
+
+/* line 109, ../compass/sass/style.scss */
+.col7 {
+  width: 56.5%;
+}
+
+/* line 113, ../compass/sass/style.scss */
+.col8 {
+  width: 65%;
+}
+
+/* line 117, ../compass/sass/style.scss */
+.col9 {
+  width: 73.5%;
+}
+
+/* line 121, ../compass/sass/style.scss */
+.col10 {
+  width: 82%;
+}
+
+/* line 125, ../compass/sass/style.scss */
+.col11 {
+  width: 90.5%;
+}
+
+/* line 129, ../compass/sass/style.scss */
+.col12 {
+  width: 99%;
+  margin: 0;
+}
+
+/* line 134, ../compass/sass/style.scss */
+.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+/* *********************************************************************************************************************
+ * Disable padding left/right 10px if I'm 1024 or gibber - correct percentage math
+ */
+@media all and (min-width: 1024px) {
+  /* line 145, ../compass/sass/style.scss */
+  .container-1000 {
+    max-width: 1000px;
+  }
+  /* line 147, ../compass/sass/style.scss */
+  .container-1000 .onerow {
+    padding: 0;
+  }
+}
+/* *********************************************************************************************************************
+ * Small devices
+ */
+@media all and (max-width: 768px) {
+  /* line 158, ../compass/sass/style.scss */
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
+    float: none;
+    width: 99%;
+  }
+}
