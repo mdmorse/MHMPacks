@@ -1,4 +1,7 @@
 @import 'compass/css3';
+$gray: #D1BFBF;
+$blue: #4C69A1;
+$light-hover:#e8ecf4;
 
 @font-face { /* declare fonts */
   font-family: "MuseoSans";
@@ -15,24 +18,28 @@
     a{
       text-decoration: none;
       color: black;}
-
-.container{
-  font-family: MuseoSans;
-}
+    a:hover{color:$blue;font-weight: bold;}
+    .container{font-family: MuseoSans;}
+    .clear{height: 500px; width: 100%; clear: both;}
 
 
 .general-info-links a{
   float: right;
   margin-right: 20px;
   text-decoration: none;
-  color: #262626;
+  color: $gray;
   font-size: 12px; 
-  border-right: 1px solid #939393; 
+  border-right: 1px solid $gray; 
   padding-right: 20px;
+}
+.general-info-links a:hover{
+  color: $blue;
+  font-weight: bold;
 }
 
 .general-info-links a:first-child{
-  border: none
+  border: none;
+
 }
 
 nav a {
@@ -42,6 +49,10 @@ nav a {
   margin-right: -10px;
 
 }
+.nav-wrapper > a:hover{
+  color: $blue;
+}
+
 
 .nav-wrapper {
   float: right;
@@ -56,7 +67,10 @@ nav a {
     vertical-align: middle;
     margin-top: 0px;
     margin-right: 5px;
-
+  }
+  a:hover{
+    color:$blue;
+    font-weight: bold;
   } 
 }
 
@@ -65,37 +79,56 @@ header {
   margin: 0px auto;
 }
 
-.aside{
-
-}
-.product-category a {
+.product-category  {
   color: black;
-  margin-left: 27px;
   font-weight: bold;
-  background-image:url("assets/images/Internal-AllPacks_01_11.png");
+  .category-nav{
+    margin-left: 30px;
+  }
+}
+.product a:hover{
+    color:$blue; 
+  }
+.shopping-cart{
+  margin: 0px;
+  .items{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid $gray;
+  }
+  .items:hover{
+      background-color: $light-hover;
+      color: $blue;
+   }
 }
 
-.items{
-  padding: 20px;
-  border-top: 1px solid #939393;
-  position: relative;
-  text-align: center;
-}
 
 .footer{
-  margin-top: 20px;
+  margin-top: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+  // overflow: hidden;
+  clear: both;
   h1{font-weight: bold;}
   li{
     list-style: none;
     font-size: 12px;
-    color:#939393;
+    color: $gray;
     margin-top: 20px;
   }
-
-   h2{
-    font-weight: bolder;
-    color:black;
+li a{
+    list-style: none;
+    font-size: 12px;
+    color: $gray;
+    margin-top: 20px;
   }
+  h2{
+    color:black;
+    font-weight: bolder; 
+    }
+   
   .icons{
     -webkit-filter: invert(100%);
     width: 25px;
@@ -105,6 +138,10 @@ header {
     margin-top: 0px;
     margin-right: 5px;
 
+  }
+  a:hover{
+    color:$blue;
+    font-weight: bold;
   } 
 }
 
@@ -118,7 +155,6 @@ header {
 .container-1000 {
   margin: 0 auto;
   padding: 0 0 0 1%;
-  
 }
 
 .container-1200 {
@@ -194,8 +230,7 @@ header {
 }
 
 .col12 {
-  width: 99%;
-  margin: 0;
+  width: 99%;margin: 0;
 }
 
 .col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {

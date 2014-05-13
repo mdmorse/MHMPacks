@@ -6,49 +6,68 @@
 }
 
 /* display fonts */
-/* line 12, ../compass/sass/main.scss */
+/* line 15, ../compass/sass/main.scss */
 h1 {
   font: 24px MuseoSans, Verdana, sans-serif;
 }
 
-/* line 13, ../compass/sass/main.scss */
+/* line 16, ../compass/sass/main.scss */
 h2 {
   font: 16px MuseoSans, Verdana, sans-serif;
 }
 
-/* line 14, ../compass/sass/main.scss */
+/* line 17, ../compass/sass/main.scss */
 h3 {
   font: 12px MuseoSans, Verdana, sans-serif;
 }
 
-/* line 15, ../compass/sass/main.scss */
+/* line 18, ../compass/sass/main.scss */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 19, ../compass/sass/main.scss */
+/* line 21, ../compass/sass/main.scss */
+a:hover {
+  color: #4c69a1;
+  font-weight: bold;
+}
+
+/* line 22, ../compass/sass/main.scss */
 .container {
   font-family: MuseoSans;
 }
 
-/* line 24, ../compass/sass/main.scss */
+/* line 23, ../compass/sass/main.scss */
+.clear {
+  height: 500px;
+  width: 100%;
+  clear: both;
+}
+
+/* line 26, ../compass/sass/main.scss */
 .general-info-links a {
   float: right;
   margin-right: 20px;
   text-decoration: none;
-  color: #262626;
+  color: #d1bfbf;
   font-size: 12px;
-  border-right: 1px solid #939393;
+  border-right: 1px solid #d1bfbf;
   padding-right: 20px;
 }
 
-/* line 34, ../compass/sass/main.scss */
+/* line 35, ../compass/sass/main.scss */
+.general-info-links a:hover {
+  color: #4c69a1;
+  font-weight: bold;
+}
+
+/* line 40, ../compass/sass/main.scss */
 .general-info-links a:first-child {
   border: none;
 }
 
-/* line 38, ../compass/sass/main.scss */
+/* line 45, ../compass/sass/main.scss */
 nav a {
   padding-left: 50px;
   color: black;
@@ -56,14 +75,19 @@ nav a {
   margin-right: -10px;
 }
 
-/* line 46, ../compass/sass/main.scss */
+/* line 52, ../compass/sass/main.scss */
+.nav-wrapper > a:hover {
+  color: #4c69a1;
+}
+
+/* line 57, ../compass/sass/main.scss */
 .nav-wrapper {
   float: right;
   margin-top: 100px;
   margin-right: 25px;
   font-weight: bold;
 }
-/* line 51, ../compass/sass/main.scss */
+/* line 62, ../compass/sass/main.scss */
 .nav-wrapper .icons {
   -webkit-filter: invert(100%);
   width: 30px;
@@ -73,50 +97,82 @@ nav a {
   margin-top: 0px;
   margin-right: 5px;
 }
+/* line 71, ../compass/sass/main.scss */
+.nav-wrapper a:hover {
+  color: #4c69a1;
+  font-weight: bold;
+}
 
-/* line 63, ../compass/sass/main.scss */
+/* line 77, ../compass/sass/main.scss */
 header {
   width: 100%;
   margin: 0px auto;
 }
 
-/* line 71, ../compass/sass/main.scss */
-.product-category a {
+/* line 82, ../compass/sass/main.scss */
+.product-category {
   color: black;
-  margin-left: 27px;
   font-weight: bold;
-  background-image: url("assets/images/Internal-AllPacks_01_11.png");
+}
+/* line 85, ../compass/sass/main.scss */
+.product-category .category-nav {
+  margin-left: 30px;
 }
 
-/* line 78, ../compass/sass/main.scss */
-.items {
-  padding: 20px;
-  border-top: 1px solid #939393;
+/* line 89, ../compass/sass/main.scss */
+.product a:hover {
+  color: #4c69a1;
+}
+
+/* line 92, ../compass/sass/main.scss */
+.shopping-cart {
+  margin: 0px;
+}
+/* line 94, ../compass/sass/main.scss */
+.shopping-cart .items {
   position: relative;
   text-align: center;
+  padding: 20px;
+  border-top: 1px solid #d1bfbf;
+}
+/* line 100, ../compass/sass/main.scss */
+.shopping-cart .items:hover {
+  background-color: #e8ecf4;
+  color: #4c69a1;
 }
 
-/* line 85, ../compass/sass/main.scss */
+/* line 107, ../compass/sass/main.scss */
 .footer {
-  margin-top: 20px;
+  margin-top: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+  clear: both;
 }
-/* line 87, ../compass/sass/main.scss */
+/* line 114, ../compass/sass/main.scss */
 .footer h1 {
   font-weight: bold;
 }
-/* line 88, ../compass/sass/main.scss */
+/* line 115, ../compass/sass/main.scss */
 .footer li {
   list-style: none;
   font-size: 12px;
-  color: #939393;
+  color: #d1bfbf;
   margin-top: 20px;
 }
-/* line 95, ../compass/sass/main.scss */
-.footer h2 {
-  font-weight: bolder;
-  color: black;
+/* line 121, ../compass/sass/main.scss */
+.footer li a {
+  list-style: none;
+  font-size: 12px;
+  color: #d1bfbf;
+  margin-top: 20px;
 }
-/* line 99, ../compass/sass/main.scss */
+/* line 127, ../compass/sass/main.scss */
+.footer h2 {
+  color: black;
+  font-weight: bolder;
+}
+/* line 132, ../compass/sass/main.scss */
 .footer .icons {
   -webkit-filter: invert(100%);
   width: 25px;
@@ -126,27 +182,32 @@ header {
   margin-top: 0px;
   margin-right: 5px;
 }
+/* line 142, ../compass/sass/main.scss */
+.footer a:hover {
+  color: #4c69a1;
+  font-weight: bold;
+}
 
 /* *************************************Layout*****************************************************/
-/* line 118, ../compass/sass/main.scss */
+/* line 155, ../compass/sass/main.scss */
 .container-1000 {
   margin: 0 auto;
   padding: 0 0 0 1%;
 }
 
-/* line 124, ../compass/sass/main.scss */
+/* line 160, ../compass/sass/main.scss */
 .container-1200 {
   margin: 0 auto;
   padding: 0 0 0 1%;
   max-width: 1220px;
 }
 
-/* line 130, ../compass/sass/main.scss */
+/* line 166, ../compass/sass/main.scss */
 .container-1000 {
   max-width: 1020px;
 }
 
-/* line 134, ../compass/sass/main.scss */
+/* line 170, ../compass/sass/main.scss */
 .row {
   clear: both;
   padding: 0 10px;
@@ -155,79 +216,79 @@ header {
 /* *********************************************************************************************************************
  * Common columns definitions
  */
-/* line 143, ../compass/sass/main.scss */
+/* line 179, ../compass/sass/main.scss */
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
   float: left;
   margin: 0 3% 0 0;
 }
 
-/* line 148, ../compass/sass/main.scss */
+/* line 184, ../compass/sass/main.scss */
 .col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
   margin: 0;
 }
 
-/* line 152, ../compass/sass/main.scss */
+/* line 188, ../compass/sass/main.scss */
 .col1 {
   width: 5.5%;
 }
 
-/* line 156, ../compass/sass/main.scss */
+/* line 192, ../compass/sass/main.scss */
 .col2 {
   width: 14%;
 }
 
-/* line 160, ../compass/sass/main.scss */
+/* line 196, ../compass/sass/main.scss */
 .col3 {
   width: 22.5%;
 }
 
-/* line 164, ../compass/sass/main.scss */
+/* line 200, ../compass/sass/main.scss */
 .col4 {
   width: 31%;
 }
 
-/* line 168, ../compass/sass/main.scss */
+/* line 204, ../compass/sass/main.scss */
 .col5 {
   width: 39.5%;
 }
 
-/* line 172, ../compass/sass/main.scss */
+/* line 208, ../compass/sass/main.scss */
 .col6 {
   width: 48%;
 }
 
-/* line 176, ../compass/sass/main.scss */
+/* line 212, ../compass/sass/main.scss */
 .col7 {
   width: 56.5%;
 }
 
-/* line 180, ../compass/sass/main.scss */
+/* line 216, ../compass/sass/main.scss */
 .col8 {
   width: 65%;
 }
 
-/* line 184, ../compass/sass/main.scss */
+/* line 220, ../compass/sass/main.scss */
 .col9 {
   width: 73.5%;
 }
 
-/* line 188, ../compass/sass/main.scss */
+/* line 224, ../compass/sass/main.scss */
 .col10 {
   width: 82%;
 }
 
-/* line 192, ../compass/sass/main.scss */
+/* line 228, ../compass/sass/main.scss */
 .col11 {
   width: 90.5%;
 }
 
-/* line 196, ../compass/sass/main.scss */
+/* line 232, ../compass/sass/main.scss */
 .col12 {
   width: 99%;
   margin: 0;
 }
 
-/* line 201, ../compass/sass/main.scss */
+/* line 236, ../compass/sass/main.scss */
 .col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
   width: 100%;
   height: auto;
@@ -239,11 +300,11 @@ header {
  * Disable padding left/right 10px if I'm 1024 or gibber - correct percentage math
  */
 @media all and (min-width: 1024px) {
-  /* line 212, ../compass/sass/main.scss */
+  /* line 247, ../compass/sass/main.scss */
   .container-1000 {
     max-width: 1000px;
   }
-  /* line 214, ../compass/sass/main.scss */
+  /* line 249, ../compass/sass/main.scss */
   .container-1000 .onerow {
     padding: 0;
   }
@@ -252,13 +313,13 @@ header {
  * Small devices
  */
 @media all and (max-width: 768px) {
-  /* line 225, ../compass/sass/main.scss */
+  /* line 260, ../compass/sass/main.scss */
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
     float: none;
     width: 99%;
   }
 }
-/* line 233, ../compass/sass/main.scss */
+/* line 268, ../compass/sass/main.scss */
 .pack-image {
   width: 169px;
   height: 163px;
@@ -267,7 +328,7 @@ header {
   margin-top: 189px;
 }
 
-/* line 247, ../compass/sass/main.scss */
+/* line 282, ../compass/sass/main.scss */
 .product-overview-test {
   position: absolute;
   z-index: -1;
