@@ -308,7 +308,7 @@ li a{
 }
 
 .bonus-details {
-      display: none;
+      // display: none;
       .details-button{
         width: 100px;
         background-color: $blue;
@@ -335,6 +335,7 @@ li a{
       min-height: 400px;
       width: 280px;
       position: relative;
+      overflow: hidden;
     }
     .pack-image {
       width: 100%;
