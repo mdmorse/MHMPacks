@@ -1,17 +1,12 @@
 $(function() {
 	
 
-	$('.pack-image').mouseenter(function(e){
-		e.preventDefault();
-		$(this).animate({
-			'marginTop' : '-=75px'
-		});
+	$('.pack-image').mouseenter(function(){
+		$(this).animate({'marginTop' : '-=75px'})
 	});
+	
 	$('.pack-image').mouseleave(function(e){
-		e.preventDefault();
-		$(this).animate({
-			'marginTop' : '+=75px'
-		});
+		$(this).animate({'marginTop' : '+=75px'});
 	});
 
 
