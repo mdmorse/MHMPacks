@@ -378,6 +378,10 @@ header .title {
   padding: 5px;
 }
 /* line 319, ../compass/sass/main.scss */
+.bonus-details p {
+  margin-top: 0px;
+}
+/* line 322, ../compass/sass/main.scss */
 .bonus-details .buy-now-button {
   width: 100px;
   background-color: black;
@@ -386,12 +390,7 @@ header .title {
   padding: 5px;
 }
 
-/* line 327, ../compass/sass/main.scss */
-.product-overview:hover .bonus-details {
-  display: block;
-}
-
-/* line 330, ../compass/sass/main.scss */
+/* line 333, ../compass/sass/main.scss */
 .product-overview {
   display: block;
   min-height: 400px;
@@ -399,7 +398,7 @@ header .title {
   position: relative;
 }
 
-/* line 336, ../compass/sass/main.scss */
+/* line 339, ../compass/sass/main.scss */
 .pack-image {
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
@@ -409,7 +408,7 @@ header .title {
   margin-top: 187px;
 }
 
-/* line 345, ../compass/sass/main.scss */
+/* line 348, ../compass/sass/main.scss */
 .pack-image img {
   width: 120px;
   margin: auto;

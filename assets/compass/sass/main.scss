@@ -297,7 +297,7 @@ li a{
   width: 200px;
   // margin-left: 60px;
   margin-top: auto;
-  margin-top: 100px
+  margin-top: 100px;
   }
 
 .pack-image img {
@@ -316,6 +316,9 @@ li a{
         color: white;
         padding: 5px;
       }
+      p{
+        margin-top: 0px;
+      }
       .buy-now-button{
         width: 100px;
         background-color: black;
@@ -324,9 +327,9 @@ li a{
         padding: 5px;
       }
     }
-    .product-overview:hover .bonus-details {
-      display: block;
-    }
+    // .product-overview:hover .bonus-details {
+    //   display: block;
+    // }
     .product-overview {
       display: block;
       min-height: 400px;
