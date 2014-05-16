@@ -77,8 +77,9 @@ nav a {
 
 header {
   width: 100%;
-  margin: 0px auto;
+  margin:auto;
   background-image:url('../images/banner.png');
+  background-repeat: no-repeat;
   height: 214px;
   .title{
     color: white;
