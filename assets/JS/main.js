@@ -1,21 +1,11 @@
 $(function() {
 	
 
-	// $('.pack-image').mouseenter(function(){
-	// 	$(this).animate({'marginTop' : '-=75px'})
-		
-	// });
-	
-	// $('.pack-image').mouseleave(function(e){
-	// 	$(this).animate({'marginTop' : '+=75px'});
-	// });
-
-
      var original = [];
-    $('.pack-image').each(function (i) {
+    $('.pack-image').each(function () {
         original.push($(this).css('margin-top'));
     });
-    $('.pack-image').hover(function (e) {
+    $('.pack-image').hover(function () {
         $(this).stop().animate(
             {"margin-top" : (
                 $(this).parent().outerHeight() - 
