@@ -2,6 +2,7 @@
 $gray: #D1BFBF;
 $blue: #4C69A1;
 $light-hover:#e8ecf4;
+$black: #161717;
 
 @font-face { /* declare fonts */
   font-family: "MuseoSans";
@@ -44,10 +45,10 @@ $light-hover:#e8ecf4;
 }
 
 nav a {
-  padding-left: 50px;
+  padding-left: 25px;
   color: black;
   font-weight: bold;
-  margin-right: -10px;
+  margin-right: -5px;
 
 }
 .nav-wrapper > a:hover{
@@ -75,6 +76,17 @@ nav a {
   } 
 }
 
+.pack-list {
+  display: none;
+  width: 960px;
+  height: 214px;
+  margin:auto;
+  background-color: $gray;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  color:white;
+}
 header {
   width: 100%;
   margin:auto;
@@ -355,5 +367,28 @@ li a{
       display: block;
     }
 
+  .arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid $black;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 12px;
+}
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid $black;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 12px;
+}
+.show-js{
+  display: none;
+}
 
 
