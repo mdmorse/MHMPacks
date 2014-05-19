@@ -444,15 +444,63 @@ header .title {
 .arrow-up {
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #161717;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #161717;
   display: inline-block;
-  margin-bottom: 2px;
-  margin-left: 12px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 45px;
 }
 
-/* line 390, ../compass/sass/main.scss */
+/* line 392, ../compass/sass/main.scss */
 .show-js {
   display: none;
+}
+
+/* line 396, ../compass/sass/main.scss */
+.nav-wrap {
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+/* line 397, ../compass/sass/main.scss */
+#example-one {
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  width: 960px;
+}
+
+/* line 398, ../compass/sass/main.scss */
+#example-one li {
+  display: inline;
+}
+
+/* line 399, ../compass/sass/main.scss */
+#example-one li a {
+  color: #bbb;
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding: 6px 10px 4px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 400, ../compass/sass/main.scss */
+#example-one li a:hover {
+  color: white;
+}
+
+/* line 401, ../compass/sass/main.scss */
+#magic-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #fe4902;
 }
